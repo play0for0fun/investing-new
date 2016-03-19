@@ -1980,7 +1980,7 @@ footer {
  .vid2{background: url(../img/vid3.jpg)no-repeat top center;background-size: cover;}
  .vid3{background: url(../img/vid2.jpg)no-repeat top center;background-size: cover;}
  .vid4{background: url(../img/vid4.jpg)no-repeat top center;background-size: cover;}
- .sld2fi{display:none}
+ .sld2fi{display:none;position: absolute;width: 100%;top: 0;left: 0;}
  .sld2fi[data-slide="0"]{display:block}.arcticmodal-container,.arcticmodal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000}
 .arcticmodal-container{overflow:auto;margin:0;padding:0;border:0;border-collapse:collapse;}
 :first-child+html .arcticmodal-container{height:100%}
