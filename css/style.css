@@ -1010,18 +1010,20 @@ header h3 {
             transform: scale(0.9);
 }
 .play {
-    background: url(../img/play.png)no-repeat top center;
+    background: url(../img/play.png)no-repeat center;
     width: 114px;
     height: 115px;
-    left: 50%;
-    margin-left: -57px;
+    left: 0;
+    margin-left: 0;
     position: absolute;
-    top: 50%;
-    margin-top: -57px;
+    top: 0;
+    margin-top: 0;
     display: block;
     z-index: 3;
     -webkit-transition: all 0.25s;
-            transition: all 0.25s;
+    transition: all 0.25s;
+    width: 100%;
+    height: 258px;
 }
 .vid_l:hover{
     margin-left: -4px;
@@ -1974,10 +1976,10 @@ footer {
     margin-left: -34px;
     z-index: 2;
     cursor: url(../img/kur_right.png),pointer;}
- .vid1{background: url(../img/vid.jpg)no-repeat top center}
- .vid2{background: url(../img/vid.jpg)no-repeat top center}
- .vid3{background: url(../img/vid.jpg)no-repeat top center}
- .vid4{background: url(../img/vid.jpg)no-repeat top center}
+ .vid1{background: url(../img/vid1.jpg)no-repeat top center;background-size: cover;}
+ .vid2{background: url(../img/vid3.jpg)no-repeat top center;background-size: cover;}
+ .vid3{background: url(../img/vid2.jpg)no-repeat top center;background-size: cover;}
+ .vid4{background: url(../img/vid4.jpg)no-repeat top center;background-size: cover;}
  .sld2fi{display:none}
  .sld2fi[data-slide="0"]{display:block}.arcticmodal-container,.arcticmodal-overlay{position:fixed;left:0;top:0;right:0;bottom:0;z-index:1000}
 .arcticmodal-container{overflow:auto;margin:0;padding:0;border:0;border-collapse:collapse;}
