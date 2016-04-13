@@ -90,32 +90,30 @@ $(document).ready(function(){
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};
 $('<style>header,section,.section{height:1100px;display:block}</style>').appendTo('head');
+$('body').addClass('loaded');
 }
 else
 {  
+  
+
   $('#pages').fullpage({
-      scrollBar:true,
-      scrollingSpeed: 1000,
-      navigation: true,
-      afterLoad: function(){move_right_pop();}
+      afterLoad: function(anchorLink, index){
+            $(this).find('.animation1').addClass('fadeInUp animated');
+            $(this).find('.animation2').addClass('fadeInRight animated');
+            $(this).find('.animation3').addClass('fadeIn animated3');
+            move_right_pop();
+            },
+      onLeave: function(index, nextIndex, direction){
+            $('.section:nth-child('+nextIndex+')').find('.animation1').addClass('fadeInUp animated');
+            $('.section:nth-child('+nextIndex+')').find('.animation2').addClass('fadeInRight animated');
+            $('.section:nth-child('+nextIndex+')').find('.animation3').addClass('fadeIn animated3');
+            },
+      afterRender: function(){
+            
+          }
     });
   
-$('.animation1').addClass('hidden-a').viewportChecker({
-            classToRemove: 'hidden-a',
-            classToAdd: 'fadeInUp animated',
-            removeClassAfterAnimation: true, 
-        }); 
-        $('.animation2').addClass('hidden-a').viewportChecker({
-            classToRemove: 'hidden-a',
-            classToAdd: 'fadeInRight animated',
-            removeClassAfterAnimation: true,
-        }); 
-        $('.animation3').addClass('hidden-a').viewportChecker({
-            classToRemove: 'hidden-a',
-            classToAdd: 'fadeIn animated3',
-            removeClassAfterAnimation: true
-        });
-    }
+}
 
 $('.st-polon').click(function(e){
    e.preventDefault();

@@ -43,7 +43,7 @@ body{font-family: 'Roboto', sans-serif;}
 a{text-decoration:none;color:inherit;outline:0!important}
 #hidden-box{display: none;}
 .relative{position: absolute;width: 100%;left: 0;}
-#pages{overflow:hidden;min-width: 1170px;}
+#pages{/* overflow:hidden; */min-width: 1170px;overflow: visible;}
 .sert{
     position: relative;
     /* max-height: 95vh; */
