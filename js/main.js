@@ -97,6 +97,8 @@ else
   
 
   $('#pages').fullpage({
+    navigation: true,
+        autoScrolling: false,
       afterLoad: function(anchorLink, index){
             $(this).find('.animation1').addClass('fadeInUp animated');
             $(this).find('.animation2').addClass('fadeInRight animated');
