@@ -2147,7 +2147,7 @@ div#maket {}
 .menu-btn.as-close{background-image:url(../img/close-menu.png);-webkit-transform:rotate(-360deg);transform:rotate(-360deg)}
 .menu{position:fixed;top:0;left:0;background: rgba(0,0,0,.75);z-index: 20;padding:60px 0 15px;-webkit-transition:all .25s;transition:all .25s;-webkit-transform:translateX(-100%);transform:translateX(-100%);text-align: left;}
 .menu.active{-webkit-transform:translateX(0);transform:translateX(0)}
-.menu a.menu-a{display:block;color:#fff;height:36px;font-size:17px;padding:0 25px 0 15px;-webkit-transition:all .25s;transition:all .25s;background:0 0;width: 320px;line-height:36px;}
+.menu a.menu-a{display:block;color:#fff;height:36px;font-size:17px;padding:0 25px 0 15px;-webkit-transition:all .25s;transition:all .25s;background:0 0;width: 220px;line-height:36px;}
 .menu a.menu-a:hover{background:rgba(255,255,255,.1)}
 .black:after {
     background: rgba(0, 0, 0, 0.15)!important;
