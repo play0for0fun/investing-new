@@ -109,7 +109,8 @@ else
             if(index == 5 || index == 7){$('.site-nav.down').addClass('black');}else{$('.site-nav.down').removeClass('black');} 
             if(index == 1){$('.site-nav.down').addClass('animation4');}else{$('.site-nav.down').removeClass('animation4');}
             if(index == 1){$('.site-nav.down').addClass('animated');}else{$('.site-nav.down').removeClass('animated');}
-          
+            if(index == 1 || index == 3 || index == 4 || index == 5 || index == 6 || index == 8){$('.menu').addClass('wmenu');}else{$('.menu').removeClass('wmenu');}
+           
             },
       onLeave: function(index, nextIndex, direction){
             $('.section:nth-child('+nextIndex+')').find('.animation1').addClass('fadeInUp animated');
@@ -136,7 +137,7 @@ $('.menu-btn').click(function(){
     menu_active = 0;
   }
 });
-$('section').click(function(){
+$('section, header').click(function(){
   if (menu_active == 1) {
     $('.menu').removeClass('active');
     $('.menu-btn').removeClass('as-close');
