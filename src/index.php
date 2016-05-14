@@ -7,6 +7,7 @@
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 <style><? include('css/head.css'); ?></style>
 <? include('track/head.php'); ?>
+<noindex><script async src="data:text/javascript;charset=utf-8;base64,ZnVuY3Rpb24gbG9hZHNjcmlwdChlLHQpe3ZhciBuPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO24uc3JjPSIvL2xwdHJhY2tlci5ydS9hcGkvIitlO24ub25yZWFkeXN0YXRlY2hhbmdlPXQ7bi5vbmxvYWQ9dDtkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKG4pO3JldHVybiAxfXZhciBpbml0X2xzdGF0cz1mdW5jdGlvbigpe2xzdGF0cy5zaXRlX2lkPTE4OTA4O2xzdGF0cy5yZWZlcmVyKCl9O3ZhciBqcXVlcnlfbHN0YXRzPWZ1bmN0aW9uKCl7alFzdGF0Lm5vQ29uZmxpY3QoKTtsb2Fkc2NyaXB0KCJzdGF0cy5qcyIsaW5pdF9sc3RhdHMpfTtsb2Fkc2NyaXB0KCJqcXVlcnktMS4xMC4yLm1pbi5qcyIsanF1ZXJ5X2xzdGF0cyk="></script></noindex>
 </head>
 <body>
 <div id="loader-wrapper">
@@ -24,7 +25,7 @@
                 <div class="logo"></div>
                 <p class="head_top">«Доверие, которое можно купить»</p>
                 <div class="head_fon">
-                    <a class="tell" href="tel:88007758877"><span class="lptracker_phone">8(800)775-88-77</span></a><div class="clear"></div>
+                    <a class="tell" href="tel:74997058340"><span class="lptracker_phone">+7 (499) 705-83-40</span></a><div class="clear"></div>
                     <p>*Звонок бесплатный</p><div class="clear"></div>
                     <a href="#" class="btn_zz">Заказать звонок</a>
                 </div><div class="clear"></div>
@@ -359,9 +360,9 @@
     <section class="mapa section" id="sec9">
         <div class="forma_gr">
             <h3>Контактная информация</h3><div class="clear"></div>
-            <p class="telefone"><span class="lptracker_phone">8 (800) 555-30-45</span></p><div class="clear"></div>
+            <p class="telefone"><span class="lptracker_phone">+7 (499) 705-83-40</span></p><div class="clear"></div>
             <p class="gps">Москва, ул. Пятницкая, 71</p>
-            <p class="mail">mail@mail.ru</p><div class="clear"></div>
+            <p class="mail">info@bminvest.ru</p><div class="clear"></div>
             <h2>Остались вопросы?<br></h2><div class="clear"></div>
             <form action="ajax/mail.php" method="post" class="foot_f">
                 <input class="inp_fo" type="text" name="name" placeholder="Ваше имя">

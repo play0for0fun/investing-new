@@ -1,5 +1,6 @@
 $('<link href="https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/libs_old.css"><link rel="stylesheet" href="css/style.css">').appendTo('head');
 
+
 $(document).ready(function(){
     if($(window).height() < 800) {
         $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2').addClass('afto');
@@ -96,7 +97,15 @@ function close_right_pop(){
 $(document).ready(function(){
   setTimeout(function(){if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};},3000);
 
+var isMobile = false; 
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+isMobile = true;
+}
 
+if (isMobile == true) {
+  $('.animation').addClass('animated');
+    $('<style>header,section,.section{height:800px!important;display:block}.animation1,.animation2,.animation3,animation4*{opacity:1;transition:0s all 0s!important;animation-duration:0s!important;animation-delay:0s!important}.site-nav.down,.site-nav.up{display:none!important}section{height:800px!important}</style>').appendTo('head');
+}
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 if(!$('body').hasClass('loaded')) {$('body').addClass('loaded')};
 $('<style>header,section,.section{height:1100px;display:block}</style>').appendTo('head');
@@ -104,8 +113,9 @@ $('body').addClass('loaded');
 }
 else
 {  
-  
+  if (isMobile != true) {
   $('#pages').fullpage({
+
         autoScrolling: false,
       afterLoad: function(anchorLink, index){
             $(this).find('.animation1').addClass('fadeInUp animated');
@@ -130,7 +140,7 @@ else
             
           }
     });
-
+}
   
 }
 

@@ -53,6 +53,6 @@ $message .= "<p>ip: {$_COOKIE["ip"]}</p>";
 $to.=", baovi.-.investing-projects.ru@lptracker.ru";
 
 mail ($to,$subject,$message,$headers);
-$to = "triowork2@gmail.com";
+$to = " investing-projects@mail.ru";
 mail ($to,$subject,$message,$headers);
 ?>
