@@ -48,10 +48,10 @@ if (isMobile == true) {
 }
 
     if($(window).height() < 800) {
-        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, sec_sert h2').addClass('afto');
+        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, .sec_sert h2').addClass('afto');
     }
     else{
-        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, sec_sert h2').removeClass('afto');
+        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, .sec_sert h2').removeClass('afto');
     }
 });
 
