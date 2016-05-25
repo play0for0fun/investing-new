@@ -7,7 +7,6 @@
 <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 <style><? include('css/head.css'); ?></style>
 <? include('track/head.php'); ?>
-<noindex><script async src="data:text/javascript;charset=utf-8;base64,ZnVuY3Rpb24gbG9hZHNjcmlwdChlLHQpe3ZhciBuPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpO24uc3JjPSIvL2xwdHJhY2tlci5ydS9hcGkvIitlO24ub25yZWFkeXN0YXRlY2hhbmdlPXQ7bi5vbmxvYWQ9dDtkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKG4pO3JldHVybiAxfXZhciBpbml0X2xzdGF0cz1mdW5jdGlvbigpe2xzdGF0cy5zaXRlX2lkPTE4OTA4O2xzdGF0cy5yZWZlcmVyKCl9O3ZhciBqcXVlcnlfbHN0YXRzPWZ1bmN0aW9uKCl7alFzdGF0Lm5vQ29uZmxpY3QoKTtsb2Fkc2NyaXB0KCJzdGF0cy5qcyIsaW5pdF9sc3RhdHMpfTtsb2Fkc2NyaXB0KCJqcXVlcnktMS4xMC4yLm1pbi5qcyIsanF1ZXJ5X2xzdGF0cyk="></script></noindex>
 </head>
 <body>
 <div id="loader-wrapper">
@@ -208,7 +207,7 @@
                     <div class="kal_bg bg_br ff6" data-step="4" data-item="yes" data-item-b="no">
                         <h4 id="polon-pust">В большинстве случаев после первого неудачного брака<br> люди утрачивают доверие, но все же со временем находят<br> свою вторую половинку</h4><div class="clear"></div>
                         <p>Заполните форму и менеджер расскажет Вам<br>о гарантиях нашего фонда</p>
-                        <form action="" class="for_br">
+                        <form action="ajax/mail.php" class="for_br">
                             <input class="inp_k" type="text" name="name" placeholder="ВВЕДИТЕ ВАШЕ ИМЯ">
                             <input class="inp_k" type="text" name="phone" placeholder="ВВЕДИТЕ ВАШ телефон">
                             <input class="inp_k" type="text" name="email" placeholder="ВВЕДИТЕ ВАШ e-mail"><div class="clear"></div>
@@ -293,6 +292,7 @@
     </section>
     <section class="sec5 section" id="sec5">
         <div class="wrap">
+            <h2>Главный</h2>
             <div class="relative" id="s5t1">
                 <div class="se_gr">
                     <p class="gc">Главной ценностью я считаю доверие наших вкладчиков. Если нам доверяют, с нами работают. И рекомендуют как компанию, всегда выполняющую свои обязательства</p><div class="clear"></div>
@@ -342,6 +342,56 @@
             </div>
         </div>
     </section>
+    <section class="sec_sert section" id="sertificate">
+        <div class="wrap">
+            <div class="relative" id="sst1">
+                <h2>Юридическая документаци <br>фонда</h2>
+            </div>
+            <div class="relative" id="sst2">
+                <div class="sert-slider" id="sld3">
+                    <div class="sert-gr" data-slide="0">
+                        <a href="img/cert/big1.jpg" class="fancy">
+                            <img src="img/cert/sm1.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>Свидетельство о внесении<br>в реестр МФО</p>
+                    </div>
+                    <div class="sert-gr" data-slide="1">
+                        <a href="img/cert/big2.jpg" class="fancy">
+                            <img src="img/cert/sm2.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>Страховой сертификат<br>на 100 млн. руб.</p>
+                    </div>
+                    <div class="sert-gr" data-slide="2">
+                        <a href="img/cert/big3.jpg" class="fancy">
+                            <img src="img/cert/sm3.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>ОГРН ООО<br>"МФО Инвест-Проект"</p>
+                    </div>
+                    <div class="sert-gr" data-slide="3">
+                        <a href="img/cert/big4.jpg" class="fancy">
+                            <img src="img/cert/sm4.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>ИНН ООО<br>"МФО Инвест-Проект"</p>
+                    </div>
+                    <div class="sert-gr" data-slide="4">
+                        <a href="img/cert/big5.jpg" class="fancy">
+                            <img src="img/cert/sm5.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>ИНН ООО<br>"АвтоГрад Ломбард"</p>
+                    </div>
+                    <div class="sert-gr" data-slide="5">
+                        <a href="img/cert/big6.jpg" class="fancy" >
+                            <img src="img/cert/sm6.jpg" alt="sect5lup" class="sec5-its">
+                        </a>
+                        <p>ОГРН ООО<br>"АвтоГрад Ломбард"</p>
+                    </div>
+                    
+                </div>
+                <a href="" class="sert_left"></a>
+                    <a href="" class="sert_right"></a>
+            </div>
+        </div>
+    </section>
     <section class="sec8 section" id="sec8">
         <div class="wrap">
             <div class="relative" id="s8t1">
@@ -373,9 +423,7 @@
                 <input type="hidden" name="event" value="cont">
             </form>
         </div>
-        <div class="map" id="map_wr">
-        
-        </div>
+        <div class="map" id="map_wr"></div>
     <footer>
         <div class="wrap">
             <div class="invest logo"></div>
@@ -386,8 +434,9 @@
             <a href="http://gulfstream.bz/" target="_blank" class="gulf">Разработка сайта:</a><div class="clear"></div>
         </div>
     </footer>
-    </div>
 </section>
+</div>
+
 <div id="hidden-box">
         <div class="pop_gr">
             <a href="#" class="close"></a>
@@ -464,7 +513,9 @@
         <a href="#sec9" class="menu-a">Контакты</a>
     </div>
 <script src="js/libs_old.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/main.js"></script>
+
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script src="js/map.js"></script>
 <?php include_once("track/body.php") ?>

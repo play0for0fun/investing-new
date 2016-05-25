@@ -1,4 +1,4 @@
-$('<link href="https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/libs_old.css"><link rel="stylesheet" href="css/style.css">').appendTo('head');
+$('<link href="https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css"><link rel="stylesheet" href="css/libs_old.css"><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/jquery.fancybox.min.css">').appendTo('head');
 
 var isMobile = false; 
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -48,10 +48,10 @@ if (isMobile == true) {
 }
 
     if($(window).height() < 800) {
-        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2').addClass('afto');
+        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, sec_sert h2').addClass('afto');
     }
     else{
-        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2').removeClass('afto');
+        $('.sec3 h2, .sec2 h2, .sec4 h2, .sec6 h2, .sec7 h2, .sec8 h2, sec_sert h2').removeClass('afto');
     }
 });
 
@@ -258,6 +258,15 @@ $('.st-pust').click(function(e){
     e.preventDefault();
   	$.arcticmodal('close');
   });
+  $(".fancy").fancybox({
+    helpers: {
+      overlay: {
+        locked: false
+      },
+      title: null
+    }
+
+  });
 
   $('input[name="phone"]').mask('+7 (999) 999-99-99');
   $('input[name="phone"]').blur(function() {if($(this).val().length != 18) {$(this).addClass('error-input');}});
@@ -306,7 +315,15 @@ $(window).load(function(){
       }});
   	$('.vid_l').click(function(e){e.preventDefault();slider2.goToPrevSlide();});
 	$('.vid_r').click(function(e){e.preventDefault();slider2.goToNextSlide();});
-  
-		
+
+  slider3 = $('#sld3').bxSlider({pager:false,controls:false, auto:false, speed: 400,
+    slideWidth: 274,
+    minSlides: 3,
+    maxSlides: 3,
+    moveSlides: 1,
+    slideMargin: 26
+  });
+  $('.sert_left').click(function(e){e.preventDefault();slider3.goToPrevSlide();});
+  $('.sert_right').click(function(e){e.preventDefault();slider3.goToNextSlide();});
 
 	});
