@@ -345,7 +345,7 @@
     <section class="sec_sert section" id="sertificate">
         <div class="wrap">
             <div class="relative" id="sst1">
-                <h2>Юридическая документаци <br>фонда</h2>
+                <h2>Юридическая документация <br>фонда</h2>
             </div>
             <div class="relative" id="sst2">
                 <div class="sert-slider" id="sld3">
